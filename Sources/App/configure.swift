@@ -31,6 +31,6 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     services.register(migrations)
 
     // Rewrite host port
-    let serverConfigure = NIOServerConfig.default(hostname: "0.0.0.0", port: 9090)
+    let serverConfigure = NIOServerConfig.default(hostname: "0.0.0.0", port: 8080)
     services.register(serverConfigure)
 }
